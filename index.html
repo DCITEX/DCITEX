@@ -3,25 +3,74 @@
 
 <head>
   <meta charset="utf-8">
-  <title>d-career_なりサポ</title>
+  <!-- ↓　仕様書留意事項：タイトルタグは保留 -->
+  <title>d-career_なりサポ（仮）</title>
+  <!-- ↑　仕様書留意事項：タイトルタグは保留 -->
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- 例$(function(){
+
+    /* ここにjQueryのコードを書く */
+    
+    });
+    $(“セレクタ”).メソッド(“パラメータ[引数]”); -->
 </head>
 
 <body>
+  <!-- メイン -->
   <div class="wrapper_Base">
-    <h1 class="title">なりサポ</h1>
-    <div class="wrapper_MV-Area">
-      <div class="MV-Area">
-        <!-- <img src=garland-pc.png><div>山崎さんに確認＝画像の付加価値について -->
-        <img src=pc-mv-left.png></img>
+    <!-- ヘッダー -->
+    <header>
+      <div class="Logo">
+        <h1><img src="images/logo-brown.svg" alt="なりサポ"></h1>
       </div>
-    </div>
-  </div>
-  <Footer>
-    <div class="top-arow">
+    </header>
+    <!-- コンテナ -->
+    <div class="container">
+      <!-- メインヴィジュアル -->
+      <div class="wrapper_MV-Area">
+        <div class="MV-Area">
+          <div class="MA-child1">
+            <div class="MA-child2">
+              <img src="images/pc-mv-left.png">
+            </div>
+            <div class="MA-child3">
+              <div class="MA-child3-1">
+                <img src="images/pc-mv-right.svg">
+              </div>
+              <div class="MA-child3-2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- なりサポとは？ -->
+      <div class="wrapper_What's-Area">
+        <div class="What's-Area">
+          <div class="WA-child1">
+<!-- Svg（WHATSの画像）右寄せ -->
+          </div>
+          <div class="WA-child1">
+            <!-- 見出し（なりサポとは）下線付き -->
+          </div>
+          <div class="WA-child1">
+            <!-- 大・太文字混ざり -->
+          </div>
+          <div class="WA-child1">
+            <!-- 小さい文字群 -->
+          </div>
+        </div>
 
+      </div>
+      <Footer>
+        <div class="Footer-Logo">
+          <img src="images/logo-white.svg">
+        </div>
+        <div class="top-arow">
+          <img src="images/top-arrow.png">
+        </div>
+      </Footer>
     </div>
-  </Footer>
 </body>
 
 </html>
