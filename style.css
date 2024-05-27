@@ -15,6 +15,10 @@ div {
     padding: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 h2 {
     letter-spacing: 0.05em;
 }
@@ -48,26 +52,55 @@ h2 {
 
 .wrapper_MV-Area {
     width: 100%;
-    height: 432px;
+    height: 34vw;
 
     }
 
-    .MV-Area {
-        background-color: #FFF8E1;
-        border-radius: 20px;
-        box-shadow: 10 10 0 #E8CC65;
-    }
-
-.MA-child1 {
-    float: right;
+.MV-Area {
+    background-color: #FFF8E1;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0 #E8CC65;
+    max-width: 1200px;
     width: 100%;
-    background-image: url(images/garland-pc.png);
-    background-size: cover;
-    background-position: center;
+    height: 33vw;
+    min-height: 370px;
 }
 
-.MA-child2 {
-    float: right;
+.MV-Area::after{
+    content: "";
+    position: absolute;
+    width: 174px;
+    height: 174px;
+    top: 450px;
+    right: -20px;
+    background: url(images/img01.png) no-repeat;
+    background-size: contain;
+}
+
+.MA-child0 {
+top: 0;
+position: relative;
+}
+
+.MA-child0 img{
+    width: 100%;
+    max-width: 1200px;
+}
+.MA-child1{
+top: -10px;
+position: relative;
+display: flex;
+justify-content: center;
+}
+
+.MA-child2 img{
+    width: 40vw;
+    max-width: 474px;
+}
+
+.MA-child3 img{
+    width: 30vw;
+    max-width: 308px;
 }
 
 .fadeUp{
@@ -77,15 +110,6 @@ h2 {
     opacity:0;
     }
 
-.MA-child3-1 {
-    float: left;
-
-}
-
-.MA-child3-2 {
-    float: right;
-    background-image: url(images/img01.png);
-}
 
 /* スマートフォン用のメイン設定 */
 
