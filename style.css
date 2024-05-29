@@ -169,18 +169,6 @@ justify-content: center;
     width: 50%;
 }
 
-.WA-child.right::after{
-    content: "";
-    position: absolute;
-    width: 20vw;
-    height: 204px;
-    top: 810px;
-    left: 78vw;
-    background: url(images/img03.png) no-repeat;
-    background-size: contain;
-    z-index: 10;
-}
-
 .WA-child.right p{
     position: relative;
     z-index: 10;
