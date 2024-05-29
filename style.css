@@ -17,6 +17,7 @@ div {
 
 * {
     box-sizing: border-box;
+    color: #775E49;
 }
 
 body{
@@ -26,6 +27,7 @@ body{
 h2 {
     letter-spacing: 0.05em;
 }
+
 
 .txtAttention{
 font-size: 24px;
@@ -39,9 +41,8 @@ font-size: 24px;
 
 /* メイン */
 
-.wrapper_Base {
-    width: 100%;
-    background-color: #F4DE8E;
+.section1 {
+   background-color: #F4DE8E;
 }
 
 .container {
@@ -199,16 +200,78 @@ justify-content: center;
     z-index: -1;
 }
 
-.fadeUp{
-    animation-name:fadeUpAnime;
-    animation-duration:0.5s;
-    animation-fill-mode:forwards;
-    opacity:0;
-    }
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
 
     .careerImg img{
         width: 100%;
     }
+
+/* Whos-Area */
+
+.section2 {
+    background-color: #FFF8E1;
+    height: 704px;
+    }
+
+.Whos-Area {
+    width: 100%;
+}
+
+.WA-flex {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.WA-title {
+    width: 100%;
+    padding-top: 120px;
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+.WA-title h2 {
+    display: inline-block;
+    border-bottom: 3px solid #775E49;
+}
+
+.WA-child1,
+.WA-child2 {
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+.WA-child1 img {
+    width: 526px;
+    height: 374px;
+}
+
+.WA-child2 {
+
+}
+
+.WA-child2 span {
+    font-weight: bold;
+}
+
+/* .Whos-Area,
+.How_to-Area,
+.Case-Area h2 {
+    border-bottom: 3px solid #775E49;
+} */
+
+/* How_to-Area */
+
+.wrapper_How_to-Area {}
+
+/* Case-Area */
+
+.wrapper_Case-Area {}
 
 /* スマートフォン用のメイン設定 */
 
@@ -232,7 +295,7 @@ Footer {
 }
 
 .Footer-Logo {
-margin: 0 auto;
+    margin: 0 auto;
 }
 
 .top-arow {
