@@ -21,13 +21,13 @@ h2 {
 
 * {
     box-sizing: border-box;
+    color: #775E49;
 }
 
 /* メイン */
 
-.wrapper_Base {
-    width: 100%;
-    background-color: #F4DE8E;
+.section1 {
+   background-color: #F4DE8E;
 }
 
 .container {
@@ -50,32 +50,29 @@ h2 {
     width: 100%;
     height: 432px;
 
-    }
+}
 
-    .MV-Area {
-        background-color: #FFF8E1;
-        border-radius: 20px;
-        box-shadow: 10 10 0 #E8CC65;
-    }
+.MV-Area {
+    background-color: #FFF8E1;
+    border-radius: 20px;
+    box-shadow: 10 10 0 #E8CC65;
+}
 
 .MA-child1 {
     float: right;
     width: 100%;
-    background-image: url(images/garland-pc.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .MA-child2 {
     float: right;
 }
 
-.fadeUp{
-    animation-name:fadeUpAnime;
-    animation-duration:0.5s;
-    animation-fill-mode:forwards;
-    opacity:0;
-    }
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
 
 .MA-child3-1 {
     float: left;
@@ -86,6 +83,68 @@ h2 {
     float: right;
     background-image: url(images/img01.png);
 }
+
+/* Whos-Area */
+
+.section2 {
+    background-color: #FFF8E1;
+    height: 704px;
+    }
+
+.Whos-Area {
+    width: 100%;
+}
+
+.WA-flex {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.WA-title {
+    width: 100%;
+    padding-top: 120px;
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+.WA-title h2 {
+    display: inline-block;
+    border-bottom: 3px solid #775E49;
+}
+
+.WA-child1,
+.WA-child2 {
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+.WA-child1 img {
+    width: 526px;
+    height: 374px;
+}
+
+.WA-child2 {
+
+}
+
+.WA-child2 span {
+    font-weight: bold;
+}
+
+/* .Whos-Area,
+.How_to-Area,
+.Case-Area h2 {
+    border-bottom: 3px solid #775E49;
+} */
+
+/* How_to-Area */
+
+.wrapper_How_to-Area {}
+
+/* Case-Area */
+
+.wrapper_Case-Area {}
 
 /* スマートフォン用のメイン設定 */
 
@@ -109,7 +168,7 @@ Footer {
 }
 
 .Footer-Logo {
-margin: 0 auto;
+    margin: 0 auto;
 }
 
 .top-arow {
