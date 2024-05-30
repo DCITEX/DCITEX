@@ -32,14 +32,14 @@ $('#page-top').click(function () {
   }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
   return false;//リンク自体の無効化
 });
-=======
+// =======
 
 
   // 動きのきっかけとなるアニメーションの名前を定義
   function delayScrollAnime() {
     var time = 0.2;//遅延時間を増やす秒数の値
     var value = time;
-    $('.delayScroll').each(function () {
+    $('.Case-flex').each(function () {
       var parent = this;					//親要素を取得
       var elemPos = $(this).offset().top;//要素の位置まで来たら
       var scroll = $(window).scrollTop();//スクロール値を取得
