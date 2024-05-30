@@ -187,7 +187,7 @@ h2 {
 }
 
 
-.WA-child.right p{
+.WA-child.right p{}
 
 .WA-child.right::after {
     content: "";
@@ -306,7 +306,7 @@ h2 {
 .Case-title {
     width: 100%;
     padding-top: 120px;
-    margin-bottom: 44px;
+    margin-bottom: 80px;
     text-align: center;
 }
 
@@ -336,7 +336,6 @@ h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 140px;
-    column-gap: 23px;
 }
 
 .Case-child1,
@@ -345,6 +344,15 @@ h2 {
 .Case-child4 {
     max-width: 243px;
     max-height: 286px;
+    margin: 0 11.5px;
+}
+
+.Case-child1 {
+    margin-left: 0;
+}
+
+.Case-child4 {
+    margin-right: 0;
 }
 
 /* 装飾画像 */
