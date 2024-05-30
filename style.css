@@ -18,6 +18,10 @@ div {
 * {
     box-sizing: border-box;
     color: #775E49;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 body{
@@ -105,9 +109,17 @@ display: flex;
 justify-content: center;
 }
 
+.MA-child2{
+    width: 42%;
+}
+
 .MA-child2 img{
     width: 37vw;
     max-width: 474px;
+}
+
+.MA-child3{
+    width: 36%;
 }
 
 .MA-child3 img{
