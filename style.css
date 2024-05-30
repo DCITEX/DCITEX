@@ -113,21 +113,21 @@ h2 {
 }
 
 
-.MA-child2{
+.MA-child2 {
     width: 42%;
 }
 
-.MA-child2 img{
+.MA-child2 img {
     width: 37vw;
     max-width: 474px;
 }
 
 
-.MA-child3{
+.MA-child3 {
     width: 36%;
 }
 
-.MA-child3 img{
+.MA-child3 img {
     width: 24vw;
     max-width: 330px;
     top: 20px;
@@ -187,7 +187,7 @@ h2 {
 }
 
 
-.WA-child.right p{}
+.WA-child.right p {}
 
 .WA-child.right::after {
     content: "";
@@ -322,7 +322,7 @@ h2 {
     position: absolute;
     width: 20vw;
     height: 200px;
-    top: 690px;
+    top: 3371px;
     left: 33vw;
     background: url(images/case-en.svg) no-repeat;
     background-size: contain;
@@ -345,6 +345,7 @@ h2 {
     max-width: 243px;
     max-height: 286px;
     margin: 0 11.5px;
+    opacity: 0;
 }
 
 .Case-child1 {
@@ -355,6 +356,25 @@ h2 {
     margin-right: 0;
 }
 
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* 装飾画像 */
 
 .Case-child1::after {
@@ -362,8 +382,8 @@ h2 {
     position: absolute;
     width: 10%;
     height: 204px;
-    top: 940px;
-    left: 8vw;
+    top: 3596px;
+    left: 363px;
     background: url(images/img07.png) no-repeat;
     background-size: contain;
 }
@@ -373,8 +393,8 @@ h2 {
     position: absolute;
     width: 10%;
     height: 204px;
-    top: 940px;
-    left: 8vw;
+    top: 3419px;
+    left: 1377px;
     background: url(images/img08.png) no-repeat;
     background-size: contain;
 }
