@@ -299,7 +299,7 @@ h2 {
 
 /* 装飾画像 */
 
-/* .Case-title h2::before {
+.Case-title h2::before {
     content: "";
     position: absolute;
     width: 20vw;
@@ -312,7 +312,7 @@ h2 {
 
 .Case-title h2::after {
     content: "";
-} */
+}
 
 .Case-flex {
     display: flex;
@@ -331,7 +331,7 @@ h2 {
 
 /* 装飾画像 */
 
-/* .Case-child1::after {
+.Case-child1::after {
     content: "";
     position: absolute;
     width: 10%;
@@ -351,7 +351,7 @@ h2 {
     left: 8vw;
     background: url(images/img08.png) no-repeat;
     background-size: contain;
-} */
+}
 
 .Case-child1 img,
 .Case-child2 img,
