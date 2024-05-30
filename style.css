@@ -26,14 +26,24 @@ div {
 
 body {
     overflow-x: hidden;
+    background-color: #F4DE8E;
+    font-size: 16px;
 }
 
 h2 {
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 0.05em;
+    border-bottom: 3px solid #775E49;
+    display: inline-block;
 }
 
+.pcOnly{
+    display: block;
+}
+.spOnly{
+    display: none;
+}
 
 .txtAttention {
     font-size: 24px;
@@ -41,8 +51,29 @@ h2 {
 
 .txtAttention span {
     font-weight: bold;
+    font-size: 24px;
 }
 
+/* 下から */
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    }
 
 
 /* メイン */
@@ -56,6 +87,10 @@ h2 {
     max-width: 90%;
     margin: 0 auto;
     text-align: center;
+}
+
+.ashirai{
+    position: absolute;
 }
 
 /* ヘッダー */
@@ -161,8 +196,6 @@ h2 {
 
 .WA-child.left h2 {
     font-size: 40px;
-    border-bottom: 3px solid #775E49;
-    width: 51%;
     line-height: 3rem;
     margin-bottom: 32px;
 }
@@ -186,10 +219,7 @@ h2 {
     width: 50%;
 }
 
-
-.WA-child.right p{
-
-.WA-child.right::after {
+/* .WA-child.right::after {
     content: "";
     position: absolute;
     width: 20vw;
@@ -199,7 +229,7 @@ h2 {
     background: url(images/img03.png) no-repeat;
     background-size: contain;
     z-index: 10;
-}
+} */
 
 .WA-child.right p {
 
@@ -228,7 +258,9 @@ h2 {
     animation-fill-mode: forwards;
     opacity: 0;
 }
-
+.careerImg{
+    padding: 0 0 120px;
+}
 .careerImg img {
     width: 100%;
 }
@@ -238,6 +270,8 @@ h2 {
 .section2 {
     background-color: #FFF8E1;
     height: 704px;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
 }
 
 .Whos-Area {
@@ -260,24 +294,38 @@ h2 {
 .WhosA-title h2 {
     display: inline-block;
     border-bottom: 3px solid #775E49;
+    position: relative;
+}
+.WhosA-title h2 .ashirai{
+top: -76px;
+left: -70px;
 }
 
 .WhosA-child1,
 .WhosA-child2 {
     width: 50%;
     margin-bottom: 100px;
+    position: relative;
 }
 
 .WhosA-child1 img {
-    width: 526px;
-    height: 374px;
+   width: 100%;
 }
 
-.WhosA-child2 {}
+.WhosA-child1 .ashirai{
+    top: -90px;
+    left: -200px;
+    width: 80%;
+}
+
+.WhosA-child2 {
+    text-align: left;
+}
 
 .WhosA-child2 span {
     font-weight: bold;
 }
+
 
 /* .Whos-Area,
 .How_to-Area,
@@ -287,7 +335,29 @@ h2 {
 
 /* How_to-Area */
 
-.wrapper_How_to-Area {}
+.wrapper_How_to-Area {
+    margin: 120px 0 140px;
+}
+
+.how_to-Area{
+    display: flex;
+}
+
+.how_to_left{
+    width: 60%;
+    text-align: left;
+    background-color: #FFF8E1;
+    border-radius: 20px;
+    padding: 70px 80px 60px;
+}
+
+.how_to_right{
+    width: 50%;
+}
+
+.how_to_right img{
+width: 100%;
+}
 
 /* Case-Area */
 
@@ -337,6 +407,8 @@ h2 {
     justify-content: center;
     margin-bottom: 140px;
     column-gap: 23px;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
 }
 
 .Case-child1,
@@ -390,6 +462,12 @@ h2 {
 /* スマートフォン用のメイン設定 */
 
 @media screen and (max-width:768px) {
+    .pcOnly{
+        display: none;
+    }
+    .spOnly{
+        display: block;
+    }
     main {
         overflow: hidden;
     }
@@ -398,22 +476,77 @@ h2 {
         background-image: url();
         height: 100vh;
     }
+    .WA-child.left{
+        width: 100%;
+    }
+    .MA-child1 {
+        top: -10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .MV-Area{
+        height: 70vw;
+    }
+    .MV-Area::after{
+        content: "";
+        background: none;
+    }
+    .Whats-Area{
+        flex-direction: column;
+    }
+    .WA-child.left{
+        padding: 70px 40px 60px;
+    }
+    .careerImg img {
+        width: 126%;
+        left: -11%;
+        position: relative;
+    }
+    .WhosA-flex {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .WhosA-child1, .WhosA-child2{
+        width: 100%;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .how_to-Area{
+        flex-direction: column;
+    }
+    .how_to_left{
+        padding: 70px 40px 60px;
+        width: 100%;
+    }
+    .how_to_right{
+        width: 100%;
+    }
 }
 
 /* フッター */
 
 Footer {
-    width: 100%;
+    width: 100vw;
     height: 228px;
     background-color: #6B5E4C;
 }
 
 .Footer-Logo {
     margin: 0 auto;
+    text-align: center;
 }
 
 .top-arow {
-    float: left;
-    margin-right: 31px;
-    margin-bottom: 28px;
+    position: absolute;
+    right: 40px;
+}
+
+.top-arow img{
+    width: 70%;
 }

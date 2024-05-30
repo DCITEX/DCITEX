@@ -21,23 +21,28 @@
 
 <body>
   <!-- メイン -->
+      <!-- ヘッダー -->
+      <header>
+        <div class="Logo">
+          <h1><img src="images/logo-brown.svg" alt="なりサポ"></h1>
+        </div>
+      </header>
+  <div class="container">
   <section class="section1">
-    <!-- ヘッダー -->
-    <header>
-      <div class="Logo">
-        <h1><img src="images/logo-brown.svg" alt="なりサポ"></h1>
-      </div>
-    </header>
+
     <!-- コンテナ -->
-    <div class="container">
+
       <!-- メインヴィジュアル -->
       <div class="wrapper_MV-Area">
         <div class="MV-Area">
-          <div class="MA-child0">
+          <div class="MA-child0 pcOnly">
             <img src="images/garland-pc.png">
           </div>
+          <div class="MA-child0 spOnly">
+            <img src="images/garland-sp.png">
+          </div>
           <div class="MA-child1">
-            <div class="MA-child2">
+            <div class="MA-child2 fadeUpTrigger">
               <img src="images/pc-mv-left.png">
             </div>
             <div class="MA-child3">
@@ -62,7 +67,7 @@
           <img src="images/career-planning.png" alt="">
         </div>
       </div>
-    </div>
+
   </section>
   <!-- どんな人が参加するの？ -->
   <section class="section2">
@@ -70,19 +75,22 @@
     <div class="container">
       <div class="Whos-Area">
         <div class="WhosA-title">
-          <h2>どんな人が参加するの？</h2>
+          <h2><img class="ashirai" src="images/whos-en.svg" alt="">どんな人が参加するの？</h2>
         </div>
         <div class="WhosA-flex">
           <div class="WhosA-child1">
+            <img class="ashirai" src="images/img04.png" alt="">
             <img src="images/whos-img.png">
           </div>
           <div class="WhosA-child2">
             <!-- 太文字 -->
+            <p class="txtAttention">
             <span>
               利用者・スタッフともに
               <br>
               全員が『なりサポ』の当事者です！
             </span>
+          </p>
             <p>
               そのような思いを込めて、なりたい姿サポートではなく
               <br>
@@ -90,6 +98,7 @@
               <br>
               通称『なりサポ』として始動しました。
             </p>
+            <img class="ashirai" src="images/img05.png" alt="">
           </div>
         </div>
       </div>
@@ -98,6 +107,16 @@
   <!-- どんなふうに実現するの？ -->
   <div class="wrapper_How_to-Area">
     <h2>どんな風に実現するの？</h2>
+    <div class="how_to-Area">
+      <div class="how_to_left">
+        <p class="txtAttention"><span>まだまだトライアルで スタートしたプログラムですので、<br>皆様と一緒に作っていきましょう！</span></p>
+          
+          <p>”なりたい姿”を目指す同志として、利用者の皆様からも 「なりたい姿のためにこんなことをしているよ！」の講師、「こんなテーマがあるといいな」のご提案を大募集して参ります！</p>
+      </div>
+      <div class="how_to_right">
+        <img src="images/howto-img.png" alt="">
+        </div>
+    </div>
   </div>
   <!-- 過去の事例 -->
   <section class="section2">
@@ -121,22 +140,26 @@
           <div class="Case-child4">
             <img src="images/case-img04.png">
           </div>
-          <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-          <script
-            src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/js/3-2-3-1.js"></script>
+
         </div>
       </div>
     </div>
   </section>
-  <Footer>
-    <div class="Footer-Logo">
-      <img src="images/logo-white.svg">
-    </div>
-    <div class="top-arow">
-      <img src="images/top-arrow.png">
-    </div>
-  </Footer>
+
+</div>
+<Footer>
+  <div class="Footer-Logo">
+    <img src="images/logo-white.svg">
+  </div>
+  <div class="top-arow">
+    <p id="page-top"><a href="#">
+    <img src="images/top-arrow.png">
+  </a></p> 
+  </div>
+</Footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="customize.js"></script>
 </body>
 
 </html>
