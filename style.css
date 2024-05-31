@@ -28,9 +28,10 @@ body {
     overflow-x: hidden;
     background-color: #F4DE8E;
     font-size: 16px;
-    overflow-x: hidden;
 }
-
+h1{
+    margin-bottom: 40px;
+}
 h2 {
     font-size: 40px;
     font-weight: bold;
@@ -120,17 +121,6 @@ h2 {
     position: relative;
 }
 
-.MV-Area::after {
-    content: "";
-    position: absolute;
-    width: 174px;
-    height: 174px;
-    top: 24vw;
-    right: -4vw;
-    background: url(images/img01.png) no-repeat;
-    background-size: contain;
-}
-
 .MA-child0 {
     top: 0;
     position: relative;
@@ -146,6 +136,12 @@ h2 {
     position: relative;
     display: flex;
     justify-content: center;
+}
+
+.MA-child1 .ashirai{
+    top: 100px;
+    left: 70vw;
+    position: absolute;
 }
 
 
@@ -321,6 +317,13 @@ left: -70px;
 .WhosA-child2 {
     text-align: left;
     line-height: 2.5rem;
+    position: relative;
+}
+.WhosA-child2 .ashirai{
+    position: absolute;
+    width: 40%;
+    top: 220px;
+    left: 250px;
 }
 
 .WhosA-child2 span {
@@ -338,9 +341,12 @@ left: -70px;
 
 .wrapper_How_to-Area {
     margin: 120px 0 140px;
+    position: relative;
 }
 .wrapper_How_to-Area h2 img{
     position: absolute;
+    top: -100px;
+    left: 620px;
 }
 
 .how_to-Area{
@@ -359,7 +365,9 @@ left: -70px;
 
 .how_to_left .ashirai{
 position: absolute;
-width: 20%;
+width: 40%;
+top: 280px;
+left: 460px;
 }
 
 .how_to_right{
@@ -519,8 +527,20 @@ width: 100%;
         background-image: url();
         height: 100vh;
     }
+    .WA-child.right{
+        left: -20vw;
+        position: relative;
+    }
     .WA-child.left{
         width: 100%;
+        padding: 70px 40px 60px;
+        left: -6vw;
+        border-radius: 0 20px 20px 0;
+    }
+    .WA-child.left .ashirai{
+        position: absolute;
+        width: 30%;
+        left: 0;
     }
     .MA-child1 {
         top: -10px;
@@ -530,8 +550,22 @@ width: 100%;
         flex-direction: column-reverse;
         align-items: center;
     }
+    .MA-child2 img {
+        width: 50vw;
+        left: -12vw;
+        max-width: 474px;
+        position: relative;
+    }
+    .MA-child3 img {
+        top: 0px;
+        width: 55vw;
+        max-width: 330px;
+        left: -12vw;
+        position: relative;
+    }
     .MV-Area{
-        height: 70vw;
+        height: 100vw;
+        max-height: none;
     }
     .MV-Area::after{
         content: "";
@@ -539,7 +573,14 @@ width: 100%;
     }
     .Whats-Area{
         flex-direction: column;
+        margin-top: 40vw;
     }
+
+.WA-child{
+    top: 30vw;
+padding: 70px 40px 60px;
+position: relative;
+}
     .WA-child.left{
         padding: 70px 40px 60px;
     }
@@ -554,6 +595,23 @@ width: 100%;
         justify-content: center;
         flex-direction: column-reverse;
         align-items: center;
+    }
+    .section2{
+        height: auto;
+    }
+    .WhosA-title h2 .ashirai {
+        top: -84px;
+        left: 0;
+    }
+    .WhosA-child1 .ashirai {
+        top: -70px;
+        left: -30vw;
+        width: 80%;
+    }
+    
+    .WhosA-child2 .ashirai {
+        top: 100px;
+        left: 60vw;
     }
     .WhosA-child1, .WhosA-child2{
         width: 100%;
