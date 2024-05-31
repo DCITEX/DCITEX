@@ -20,7 +20,7 @@ div {
     color: #775E49;
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -28,6 +28,7 @@ body {
     overflow-x: hidden;
     background-color: #F4DE8E;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -181,34 +182,26 @@ h2 {
     background-color: #FFF8E1;
     border-radius: 20px;
     padding: 70px 80px 60px;
+    line-height: 2.5rem;
 }
 
-.WA-child.left::after {
-    content: "";
-    position: absolute;
-    width: 10%;
-    height: 204px;
-    top: 940px;
-    left: 8vw;
-    background: url(images/img02.png) no-repeat;
-    background-size: contain;
+.WA-child.left .ashirai{
+position: absolute;
+width: 10%;
 }
 
 .WA-child.left h2 {
     font-size: 40px;
     line-height: 3rem;
     margin-bottom: 32px;
+    position: relative;
 }
 
-.WA-child.left h2::before {
-    content: "";
+.WA-child.left h2 img{
     position: absolute;
-    width: 20vw;
-    height: 200px;
-    top: 690px;
-    left: 33vw;
-    background: url(images/whats-en.svg) no-repeat;
-    background-size: contain;
+    top: -90px;
+    left: 220px;
+    
 }
 
 .WA-child.left h2::after {
@@ -327,6 +320,7 @@ left: -70px;
 
 .WhosA-child2 {
     text-align: left;
+    line-height: 2.5rem;
 }
 
 .WhosA-child2 span {
@@ -345,6 +339,9 @@ left: -70px;
 .wrapper_How_to-Area {
     margin: 120px 0 140px;
 }
+.wrapper_How_to-Area h2 img{
+    position: absolute;
+}
 
 .how_to-Area{
     display: flex;
@@ -356,6 +353,13 @@ left: -70px;
     background-color: #FFF8E1;
     border-radius: 20px;
     padding: 70px 80px 60px;
+    line-height: 2.5rem;
+    position: relative;
+}
+
+.how_to_left .ashirai{
+position: absolute;
+width: 20%;
 }
 
 .how_to_right{
