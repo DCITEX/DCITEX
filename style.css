@@ -143,7 +143,7 @@ h2 {
 
 .MA-child1 .ashirai {
     top: 100px;
-    left: 70vw;
+    left: 990px;
     position: absolute;
 }
 
@@ -274,6 +274,9 @@ h2 {
     margin: 0 calc(50% - 50vw);
     width: 100vw;
 }
+.section2 .container{
+    padding-bottom: 80px;
+}
 
 .Whos-Area {
     width: 100%;
@@ -359,6 +362,7 @@ h2 {
 
 .how_to-Area {
     display: flex;
+    margin-top: 37px;
 }
 
 .how_to_left {
@@ -525,6 +529,33 @@ h2 {
     width: 100%;
 }
 
+/* フッター */
+
+Footer {
+    width: 100vw;
+    height: 228px;
+    background-color: #6B5E4C;
+}
+
+.Footer-Logo {
+    margin: 0 auto;
+    text-align: center;
+    top: 90px;
+    position: relative;
+}
+
+.top-arow {
+    position: fixed;
+    right: 0px;
+    width: 132px;
+    z-index: 100;
+    bottom: 30px;
+}
+
+.top-arow img{
+    width: 70%;
+}
+
 /* スマートフォン用のメイン設定 */
 
 @media screen and (max-width:768px) {
@@ -574,7 +605,7 @@ h2 {
 
     .MA-child2 img {
         width: 50vw;
-        left: -12vw;
+        left: -8vw;
         max-width: 474px;
         position: relative;
     }
@@ -583,7 +614,7 @@ h2 {
         top: 0px;
         width: 55vw;
         max-width: 330px;
-        left: -12vw;
+        left: -8vw;
         position: relative;
     }
 
@@ -599,7 +630,7 @@ h2 {
 
     .Whats-Area {
         flex-direction: column;
-        margin-top: 40vw;
+        margin-top: 60vw;
     }
 
     .WA-child {
@@ -608,8 +639,8 @@ h2 {
         position: relative;
     }
 
-    .WA-child.left {
-        padding: 70px 40px 60px;
+    .WA-child.left h2 img{
+        left: 18vw;
     }
 
     .careerImg img {
@@ -642,7 +673,7 @@ h2 {
     }
 
     .WhosA-child2 .ashirai {
-        top: 100px;
+        top: 240px;
         left: 60vw;
     }
 
@@ -660,6 +691,7 @@ h2 {
     .how_to_left {
         padding: 70px 40px 60px;
         width: 100%;
+
     }
 
     .how_to_right {
@@ -707,26 +739,23 @@ h2 {
         opacity: 0;
     }
 
+    Footer {
+        height: 275px;
+    }
+    
+    .Footer-Logo {
+        top: 120px;
+    }
+
+    .top-arow{
+        right: -1vw;
+        width: 24vw;
+    }
+
 }
 
-/* フッター */
-
-Footer {
-    width: 100vw;
-    height: 228px;
-    background-color: #6B5E4C;
-}
-
-.Footer-Logo {
-    margin: 0 auto;
-    text-align: center;
-}
-
-.top-arow {
-    position: absolute;
-    right: 40px;
-}
 
 .top-arow img {
     width: 70%;
 }
+
