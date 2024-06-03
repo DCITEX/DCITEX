@@ -83,6 +83,10 @@ h2 {
 
 /* メイン */
 
+.wrapper{
+    overflow: hidden;
+}
+
 .section1 {
     background-color: #F4DE8E;
 }
@@ -416,18 +420,6 @@ h2 {
 }
 
 /* 装飾画像 */
-
-.Case-title h2 .ashirai {
-
-    content: "";
-    position: absolute;
-    width: 182.61px;
-    height: 89.96px;
-    top: 3730px;
-    left: 745px;
-    background: url(images/case-en.svg) no-repeat;
-    background-size: contain;
-}
 
 .Case-title h2::after {
     content: "";
