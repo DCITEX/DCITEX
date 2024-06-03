@@ -423,8 +423,8 @@ h2 {
     position: absolute;
     width: 182.61px;
     height: 89.96px;
-    top: 3500px;
-    left: 768px;
+    top: 3730px;
+    left: 745px;
     background: url(images/case-en.svg) no-repeat;
     background-size: contain;
 }
@@ -495,9 +495,9 @@ h2 {
 
 .Case-child4 .ashirai {
     position: absolute;
-    width: 40%;
-    top: 220px;
-    left: 250px;
+    width: 100%;
+    top: -130px;
+    left: 150px;
 }
 
 /* .Case-child1::after {
