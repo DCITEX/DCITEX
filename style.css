@@ -29,9 +29,11 @@ body {
     background-color: #F4DE8E;
     font-size: 16px;
 }
-h1{
+
+h1 {
     margin-bottom: 40px;
 }
+
 h2 {
     font-size: 40px;
     font-weight: bold;
@@ -40,10 +42,11 @@ h2 {
     display: inline-block;
 }
 
-.pcOnly{
+.pcOnly {
     display: block;
 }
-.spOnly{
+
+.spOnly {
     display: none;
 }
 
@@ -58,24 +61,24 @@ h2 {
 
 /* 下から */
 
-.fadeUp{
-    animation-name:fadeUpAnime;
-    animation-duration:1s;
-    animation-fill-mode:forwards;
-    opacity:0;
-    }
-    
-    @keyframes fadeUpAnime{
-      from {
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
         opacity: 0;
-      transform: translateY(100px);
-      }
-    
-      to {
-        opacity: 1;
-      transform: translateY(0);
-      }
+        transform: translateY(100px);
     }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 /* メイン */
@@ -91,7 +94,7 @@ h2 {
     text-align: center;
 }
 
-.ashirai{
+.ashirai {
     position: absolute;
 }
 
@@ -138,7 +141,7 @@ h2 {
     justify-content: center;
 }
 
-.MA-child1 .ashirai{
+.MA-child1 .ashirai {
     top: 100px;
     left: 990px;
     position: absolute;
@@ -181,9 +184,9 @@ h2 {
     line-height: 2.5rem;
 }
 
-.WA-child.left .ashirai{
-position: absolute;
-width: 10%;
+.WA-child.left .ashirai {
+    position: absolute;
+    width: 10%;
 }
 
 .WA-child.left h2 {
@@ -193,11 +196,11 @@ width: 10%;
     position: relative;
 }
 
-.WA-child.left h2 img{
+.WA-child.left h2 img {
     position: absolute;
     top: -90px;
     left: 220px;
-    
+
 }
 
 .WA-child.left h2::after {
@@ -254,9 +257,11 @@ width: 10%;
     animation-fill-mode: forwards;
     opacity: 0;
 }
-.careerImg{
+
+.careerImg {
     padding: 0 0 120px;
 }
+
 .careerImg img {
     width: 100%;
 }
@@ -295,9 +300,10 @@ width: 10%;
     border-bottom: 3px solid #775E49;
     position: relative;
 }
-.WhosA-title h2 .ashirai{
-top: -76px;
-left: -70px;
+
+.WhosA-title h2 .ashirai {
+    top: -76px;
+    left: -70px;
 }
 
 .WhosA-child1,
@@ -308,10 +314,10 @@ left: -70px;
 }
 
 .WhosA-child1 img {
-   width: 100%;
+    width: 100%;
 }
 
-.WhosA-child1 .ashirai{
+.WhosA-child1 .ashirai {
     top: -90px;
     left: -200px;
     width: 80%;
@@ -322,7 +328,8 @@ left: -70px;
     line-height: 2.5rem;
     position: relative;
 }
-.WhosA-child2 .ashirai{
+
+.WhosA-child2 .ashirai {
     position: absolute;
     width: 40%;
     top: 220px;
@@ -346,18 +353,19 @@ left: -70px;
     margin: 120px 0 140px;
     position: relative;
 }
-.wrapper_How_to-Area h2 img{
+
+.wrapper_How_to-Area h2 img {
     position: absolute;
     top: -100px;
     left: 620px;
 }
 
-.how_to-Area{
+.how_to-Area {
     display: flex;
     margin-top: 37px;
 }
 
-.how_to_left{
+.how_to_left {
     width: 60%;
     text-align: left;
     background-color: #FFF8E1;
@@ -367,26 +375,27 @@ left: -70px;
     position: relative;
 }
 
-.how_to_left .ashirai{
-position: absolute;
-width: 40%;
-top: 280px;
-left: 460px;
+.how_to_left .ashirai {
+    position: absolute;
+    width: 40%;
+    top: 280px;
+    left: 460px;
 }
 
-.how_to_right{
+.how_to_right {
     width: 50%;
 }
 
-.how_to_right img{
-width: 100%;
+.how_to_right img {
+    width: 100%;
 }
 
 /* Case-Area */
 
 .section4 {
     background-color: #FFF8E1;
-    height: 704px;
+    width: 100%;
+    height: 689px;
 }
 
 .Case-Area {
@@ -397,9 +406,8 @@ width: 100%;
 .Case-title {
     width: 216px;
     padding-top: 120px;
-    margin-bottom: 80px;
     text-align: center;
-    margin: 0 auto;
+    margin: 120px auto 80px auto;
 }
 
 .Case-title h2 {
@@ -409,14 +417,14 @@ width: 100%;
 
 /* 装飾画像 */
 
-.Case {
+.Case-title h2 .ashirai {
 
     content: "";
-    position absolute;
+    position: absolute;
     width: 182.61px;
     height: 89.96px;
-    top: 3371px;
-    left: 741px;
+    top: 3500px;
+    left: 768px;
     background: url(images/case-en.svg) no-repeat;
     background-size: contain;
 }
@@ -445,6 +453,7 @@ width: 100%;
     max-height: 286px;
     margin: 0 11.5px;
     opacity: 0;
+    flex: 0 1 calc(25% - 23px);
 }
 
 .Case-child1 {
@@ -478,7 +487,20 @@ width: 100%;
 
 /* 装飾画像 */
 
-.Case-child1::after {
+.Case-child1 .ashirai {
+    top: -130px;
+    left: -85px;
+    width: 80%;
+}
+
+.Case-child4 .ashirai {
+    position: absolute;
+    width: 40%;
+    top: 220px;
+    left: 250px;
+}
+
+/* .Case-child1::after {
     content: "";
     position: absolute;
     width: 10%;
@@ -498,7 +520,7 @@ width: 100%;
     left: 1377px;
     background: url(images/img08.png) no-repeat;
     background-size: contain;
-}
+} */
 
 .Case-child1 img,
 .Case-child2 img,
@@ -537,12 +559,14 @@ Footer {
 /* スマートフォン用のメイン設定 */
 
 @media screen and (max-width:768px) {
-    .pcOnly{
+    .pcOnly {
         display: none;
     }
-    .spOnly{
+
+    .spOnly {
         display: block;
     }
+
     main {
         overflow: hidden;
     }
@@ -551,21 +575,25 @@ Footer {
         background-image: url();
         height: 100vh;
     }
-    .WA-child.right{
+
+    .WA-child.right {
         left: -20vw;
         position: relative;
     }
-    .WA-child.left{
+
+    .WA-child.left {
         width: 100%;
         padding: 70px 40px 60px;
         left: -6vw;
         border-radius: 0 20px 20px 0;
     }
-    .WA-child.left .ashirai{
+
+    .WA-child.left .ashirai {
         position: absolute;
         width: 30%;
         left: 0;
     }
+
     .MA-child1 {
         top: -10px;
         position: relative;
@@ -574,12 +602,14 @@ Footer {
         flex-direction: column-reverse;
         align-items: center;
     }
+
     .MA-child2 img {
         width: 50vw;
         left: -8vw;
         max-width: 474px;
         position: relative;
     }
+
     .MA-child3 img {
         top: 0px;
         width: 55vw;
@@ -587,35 +617,38 @@ Footer {
         left: -8vw;
         position: relative;
     }
-    .MV-Area{
+
+    .MV-Area {
         height: 100vw;
         max-height: none;
     }
-    .MV-Area::after{
+
+    .MV-Area::after {
         content: "";
         background: none;
     }
-    .Whats-Area{
+
+    .Whats-Area {
         flex-direction: column;
         margin-top: 60vw;
     }
 
-.WA-child{
-    top: 30vw;
-padding: 70px 40px 60px;
-position: relative;
-}
-    .WA-child.left{
+    .WA-child {
+        top: 30vw;
         padding: 70px 40px 60px;
+        position: relative;
     }
+
     .WA-child.left h2 img{
         left: 18vw;
     }
+
     .careerImg img {
         width: 126%;
         left: -11%;
         position: relative;
     }
+
     .WhosA-flex {
         flex-wrap: wrap;
         display: flex;
@@ -623,62 +656,54 @@ position: relative;
         flex-direction: column-reverse;
         align-items: center;
     }
-    .section2{
+
+    .section2 {
         height: auto;
     }
+
     .WhosA-title h2 .ashirai {
         top: -84px;
         left: 0;
     }
-    .WhosA-child1{
-        margin-top: 50px;
-    }
+
     .WhosA-child1 .ashirai {
         top: -70px;
         left: -30vw;
         width: 80%;
     }
-    
+
     .WhosA-child2 .ashirai {
         top: 240px;
         left: 60vw;
     }
-    .WhosA-child1, .WhosA-child2{
+
+    .WhosA-child1,
+    .WhosA-child2 {
         width: 100%;
         margin-bottom: 30px;
         position: relative;
     }
-    .WhosA-child2{
-        line-height: 3rem;
-    }
-    .whosTxt{
-margin-top: 10vw;
-    }
-    .how_to-Area{
+
+    .how_to-Area {
         flex-direction: column;
     }
-    .wrapper_How_to-Area h2 img{
-        left: 12vw;
+
+    .how_to_left {
+        padding: 70px 40px 60px;
+        width: 100%;
+
     }
-    .how_to_left{
-        padding: 70px 50px 60px;
-        width: 90vw;
-        margin: 6vw 0 0 -40px;
-    }
-    .how_to_left .ashirai{
-        width: 40%;
-        top: 360px;
-        left: 65vw;
-    }
-    .how_to_right{
+
+    .how_to_right {
         width: 100%;
     }
 
     .section4 {
         background-color: #FFF8E1;
-        height: 704px;
+        width: 375px;
+        height: 739px;
     }
-    
+
     .Case-Area {
         width: 100%;
     }
@@ -689,7 +714,7 @@ margin-top: 10vw;
         margin-bottom: 60px;
         text-align: center;
     }
-    
+
     .Case-title h2 {
         display: inline-block;
         border-bottom: 3px solid #775E49;
@@ -705,13 +730,13 @@ margin-top: 10vw;
     .Case-child2,
     .Case-child3,
     .Case-child4 {
-    flex: 0 1 calc(50% - 10px);
-    row-gap: 15.5px;
-    column-gap: 12px;
-    max-width: 154.57px;
-    max-height: 181.93px;
-    margin: 0 11.5px;
-    opacity: 0;
+        flex: 0 1 calc(50% - 23px);
+        row-gap: 15.5px;
+        column-gap: 12px;
+        max-width: 154.57px;
+        max-height: 181.93px;
+        margin: 0 11.5px;
+        opacity: 0;
     }
 
     Footer {
@@ -727,5 +752,10 @@ margin-top: 10vw;
         width: 24vw;
     }
 
+}
+
+
+.top-arow img {
+    width: 70%;
 }
 
