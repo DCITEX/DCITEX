@@ -620,7 +620,7 @@ Footer {
     }
 
     .MV-Area {
-        height: 140vw;
+        height: 160vw;
         max-height: none;
     }
 
@@ -631,7 +631,7 @@ Footer {
 
     .Whats-Area {
         flex-direction: column;
-        margin-top: 100vw;
+        margin-top: 120vw;
     }
 
     .WA-child {
