@@ -3,7 +3,7 @@ function fadeAnime(){
 
   // ふわっ
   $('.fadeUpTrigger').each(function(){ //fadeUpTriggerというクラス名が
-    var elemPos = $(this).offset().top-50;//要素より、50px上の
+    var elemPos = $(this).offset().top-0;//要素より、50px上の
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight){
@@ -37,7 +37,7 @@ $('#page-top').click(function () {
 
   // 動きのきっかけとなるアニメーションの名前を定義
   function delayScrollAnime() {
-    var time = 0.2;//遅延時間を増やす秒数の値
+    var time = 0.3;//遅延時間を増やす秒数の値
     var value = time;
     $('.Case-flex').each(function () {
       var parent = this;					//親要素を取得
