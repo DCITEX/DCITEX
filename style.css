@@ -753,6 +753,19 @@ Footer {
         margin: 10px;
         opacity: 0;
     }
+    .case-illust01 .ashirai{
+        top: 210px;
+        left: -4vw;
+        width: 30%;
+        z-index: 10;
+    }
+
+    .case-illust02 .ashirai {
+        top: 640px;
+        left: 55vw;
+        width: 180px;
+        z-index: 10;
+    }
 
     Footer {
         height: 275px;
