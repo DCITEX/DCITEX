@@ -63,7 +63,7 @@ h2 {
 
 .fadeUp {
     animation-name: fadeUpAnime;
-    animation-duration: 1s;
+    animation-duration: 1.4s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
@@ -82,6 +82,10 @@ h2 {
 
 
 /* メイン */
+
+.wrapper{
+    overflow: hidden;
+}
 
 .section1 {
     background-color: #F4DE8E;
@@ -340,13 +344,6 @@ h2 {
     font-weight: bold;
 }
 
-
-/* .Whos-Area,
-.How_to-Area,
-.Case-Area h2 {
-    border-bottom: 3px solid #775E49;
-} */
-
 /* How_to-Area */
 
 .wrapper_How_to-Area {
@@ -356,8 +353,8 @@ h2 {
 
 .wrapper_How_to-Area h2 img {
     position: absolute;
-    top: -100px;
-    left: 620px;
+    top: -89px;
+    left: 53.3vw;
 }
 
 .how_to-Area {
@@ -401,6 +398,21 @@ h2 {
 .Case-Area {
     max-width: 1200px;
     width: 100%;
+    position: relative;
+}
+
+.case-illust01 .ashirai{
+    top: 140px;
+    left: -4vw;
+    width: 20%;
+    z-index: 10;
+}
+
+.case-illust02 .ashirai{
+    top: 160px;
+    left: 65vw;
+    width: 17vw;
+    z-index: 10;
 }
 
 .Case-title {
@@ -417,20 +429,16 @@ h2 {
 
 /* 装飾画像 */
 
-.Case-title h2 .ashirai {
-
-    content: "";
-    position: absolute;
-    width: 182.61px;
-    height: 89.96px;
-    top: 3730px;
-    left: 745px;
-    background: url(images/case-en.svg) no-repeat;
-    background-size: contain;
+.Case-title {
+    position: relative;
+    padding-top: 172px;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
-.Case-title h2::after {
-    content: "";
+.Case-title h2 .ashirai{
+    top: 101px;
+    left: -110px;
 }
 
 .Case-flex {
@@ -464,26 +472,6 @@ h2 {
     margin-right: 0;
 }
 
-/* アニメーション */
-
-.fadeUp {
-    animation-name: fadeUpAnime;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-@keyframes fadeUpAnime {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* 装飾画像 */
 
@@ -544,7 +532,7 @@ Footer {
     position: relative;
 }
 
-.top-arow {
+.top-arrow {
     position: fixed;
     right: 0px;
     width: 132px;
@@ -552,7 +540,7 @@ Footer {
     bottom: 30px;
 }
 
-.top-arow img{
+.top-arrow img{
     width: 70%;
 }
 
@@ -566,7 +554,10 @@ Footer {
     .spOnly {
         display: block;
     }
-
+    .Logo{
+        margin: 0 auto;
+        text-align: center;
+    }
     main {
         overflow: hidden;
     }
@@ -647,6 +638,7 @@ Footer {
         width: 126%;
         left: -11%;
         position: relative;
+        margin-top: 80px;
     }
 
     .WhosA-flex {
@@ -661,9 +653,17 @@ Footer {
         height: auto;
     }
 
+    .whosTxt{
+        margin-top: 30px;
+    }
+
     .WhosA-title h2 .ashirai {
         top: -84px;
-        left: 0;
+        left: -17vw;
+    }
+
+    .WhosA-child1{
+        width: 100%;
     }
 
     .WhosA-child1 .ashirai {
@@ -677,9 +677,12 @@ Footer {
         left: 60vw;
     }
 
+    .WhosA-child2{
+        width: 65vw;
+    }
+
     .WhosA-child1,
     .WhosA-child2 {
-        width: 100%;
         margin-bottom: 30px;
         position: relative;
     }
@@ -693,6 +696,19 @@ Footer {
         width: 100%;
 
     }
+    .wrapper_How_to-Area h2 img{
+        left: 12vw;
+    }
+    .how_to_left{
+        padding: 70px 50px 60px;
+        width: 90vw;
+        margin: 6vw 0 0 -40px;
+    }
+    .how_to_left .ashirai{
+        width: 40%;
+        top: 360px;
+        left: 65vw;
+    }
 
     .how_to_right {
         width: 100%;
@@ -700,7 +716,7 @@ Footer {
 
     .section4 {
         background-color: #FFF8E1;
-        width: 375px;
+        width: 100%;
         height: 739px;
     }
 
@@ -709,7 +725,6 @@ Footer {
     }
 
     .Case-title {
-        width: 163px;
         padding-top: 172px;
         margin-bottom: 60px;
         text-align: center;
@@ -722,8 +737,8 @@ Footer {
 
     .Case-flex {
         flex-wrap: wrap;
-        margin: 0 28.43px 0 22px;
-
+        margin: 0 auto;
+        max-width: 370px;
     }
 
     .Case-child1,
@@ -735,7 +750,7 @@ Footer {
         column-gap: 12px;
         max-width: 154.57px;
         max-height: 181.93px;
-        margin: 0 11.5px;
+        margin: 10px;
         opacity: 0;
     }
 
@@ -747,7 +762,7 @@ Footer {
         top: 120px;
     }
 
-    .top-arow{
+    .top-arrow{
         right: -1vw;
         width: 24vw;
     }
@@ -755,7 +770,7 @@ Footer {
 }
 
 
-.top-arow img {
+.top-arrow img {
     width: 70%;
 }
 
