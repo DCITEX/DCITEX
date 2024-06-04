@@ -191,6 +191,7 @@ h2 {
 .WA-child.left .ashirai {
     position: absolute;
     width: 10%;
+    left: 0;
 }
 
 .WA-child.left h2 {
@@ -277,6 +278,7 @@ h2 {
     height: 704px;
     margin: 0 calc(50% - 50vw);
     width: 100vw;
+    box-shadow: 0 15px 15px #00000012;
 }
 .section2 .container{
     padding-bottom: 80px;
@@ -354,7 +356,7 @@ h2 {
 .wrapper_How_to-Area h2 img {
     position: absolute;
     top: -89px;
-    left: 53.3vw;
+    left: 41vw;
 }
 
 .how_to-Area {
@@ -374,9 +376,9 @@ h2 {
 
 .how_to_left .ashirai {
     position: absolute;
-    width: 40%;
-    top: 280px;
-    left: 460px;
+    width: 35%;
+    top: 270px;
+    left: 33vw;
 }
 
 .how_to_right {
@@ -593,24 +595,32 @@ Footer {
         flex-direction: column-reverse;
         align-items: center;
     }
+    .MA-child2{
+        width: 100%;
+    }
 
     .MA-child2 img {
-        width: 50vw;
-        left: -8vw;
-        max-width: 474px;
+        width: 80vw;
+        left: 0;
         position: relative;
+        margin-top: 40px;
+    }
+
+    .MA-child3{
+        width: 100%;
     }
 
     .MA-child3 img {
-        top: 0px;
-        width: 55vw;
+        top: 0;
+        width: 100%;
         max-width: 330px;
-        left: -8vw;
+        left: 0;
         position: relative;
+        margin-top: 40px;
     }
 
     .MV-Area {
-        height: 100vw;
+        height: 140vw;
         max-height: none;
     }
 
@@ -621,7 +631,7 @@ Footer {
 
     .Whats-Area {
         flex-direction: column;
-        margin-top: 60vw;
+        margin-top: 100vw;
     }
 
     .WA-child {
@@ -754,9 +764,9 @@ Footer {
         opacity: 0;
     }
     .case-illust01 .ashirai{
-        top: 210px;
-        left: -4vw;
-        width: 30%;
+        top: 190px;
+        left: -18vw;
+        width: 50%;
         z-index: 10;
     }
 
